@@ -2,6 +2,10 @@ function submit1(){
     var a =  document.getElementById("text1").value;
     var b =  document.getElementById("text2").value;
     var c = parseInt(a) + parseInt(b); 
+
+    localStorage.setItem('num1', a)
+    localStorage.setItem('num2', b)
+
     document.getElementById("text3").innerHTML=c;
   
   }
